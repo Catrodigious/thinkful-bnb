@@ -169,7 +169,7 @@ form button {
 .host-description {
   display: grid;
   place-items: center center;
-  max-width: 40%;
+  max-width: 45%;
 }
 
 .host-item{
@@ -338,8 +338,6 @@ footer p {
   .idea-img{
     height: 400px;
     width: 100%;
-    padding-left: 30px;
-
   }
 
   .about-image{

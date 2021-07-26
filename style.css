@@ -327,10 +327,22 @@ footer p {
 
   .idea-img{
     height: 400px;
+    width: 100%;
+    padding-left: 30px;
 
   }
 
   .about-image{
+    height: 300px;
+  }
+
+  .host-image{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .host-img{
     height: 300px;
   }
 

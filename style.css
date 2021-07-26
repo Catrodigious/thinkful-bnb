@@ -124,6 +124,8 @@ form button {
 
 .find-rental{
   text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 
 /* -------  Grid ------- */
@@ -234,6 +236,10 @@ footer p {
   .host-description {
     max-width: 100%;
   }
+
+  .find-rental{
+    flex-direction: column;
+  }
 }
 
 
@@ -284,6 +290,10 @@ footer p {
   }
   .host-description {
     max-width: 100%;
+  }
+
+  .find-rental{
+    flex-direction: column;
   }
 }
 
@@ -353,6 +363,10 @@ footer p {
 
   .grid-container {
     display: flex;
+    flex-direction: row;
+  }
+
+  .find-rental{
     flex-direction: row;
   }
 }

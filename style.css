@@ -137,11 +137,16 @@ form button {
   margin-right: 10px;
 }
 
+.about-container{
+  display: grid;
+  place-items: center center;
+}
+
 /* ------- Misc ------- */
 .about-description {
-  margin-left: 10px;
-  top: 50%;
-  transform: translateY(60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .idea-img {
@@ -202,13 +207,9 @@ footer p {
     transform: translateY(20%);
   }
 
-  .idea-img {
-    width: auto;
-    max-height: 250px;
-  }
-
-  .about-image{
-    width: auto;
+  .idea-img,
+  .about-image {
+    max-width: 100%;
     max-height: 250px;
   }
 
@@ -231,7 +232,55 @@ footer p {
 }
 
 
-@media all and (min-width: 768px){
+@media all and (max-width: 1024px){
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-description {
+    margin-left: 0px;
+    transform: translateY(20%);
+  }
+
+  .about-image, 
+  .idea-img{
+    height: 400px;
+    max-width: 100%;
+  }
+
+  section.alternate-background {
+    padding-bottom: 45px;
+  }
+
+  form label {
+    display: inline-block;
+    text-align: left;
+  }
+  form input {
+    width: 120px;
+  }
+  
+  form select {
+    width: 155px;
+  }
+
+  .host-item {
+    margin-left: 10px;
+    margin-top: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media all and (min-width: 1024px){
   form {
     display: flex;
     flex-direction: row;
@@ -242,7 +291,7 @@ footer p {
     display: flex;
     justify-content: right;
     top: 100%;
-    transform: translateY(-100%);
+
   }
 
   form {
@@ -269,61 +318,21 @@ footer p {
   }
 
   .idea-img{
-    height: 500px;
+    height: 400px;
+    max-width: 100%;
   }
 
   .about-image{
-    height: 280px;
+    height: 300px;
   }
 
   .host-item {
     margin-top: -20px;
     margin-bottom: -20px;
   }
-}
-
-@media all and (max-width: 850px){
-  form{
-    display: flex;
-    flex-direction: column;
-  }
 
   .grid-container {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-description {
-    margin-left: 0px;
-    transform: translateY(20%);
-  }
-
-  .about-image, 
-  .idea-img{
-    height: 500px;
-  }
-
-  section.alternate-background {
-    padding-bottom: 45px;
-  }
-
-  form label {
-    display: inline-block;
-    text-align: left;
-  }
-  form input {
-    width: 120px;
-  }
-  
-  form select {
-    width: 155px;
-  }
-
-  .host-item {
-    margin-left: 10px;
-    margin-top: 20px;
-    text-align: left;
-    margin-bottom: 20px;
+    flex-direction: row;
   }
 }

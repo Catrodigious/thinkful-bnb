@@ -167,6 +167,7 @@ form button {
 .host-description {
   display: grid;
   place-items: center center;
+  max-width: 40%;
 }
 
 .host-item{
@@ -229,6 +230,10 @@ footer p {
     margin-bottom: 20px;
     text-align: left;
   }
+
+  .host-description {
+    max-width: 100%;
+  }
 }
 
 
@@ -277,6 +282,9 @@ footer p {
     text-align: left;
     margin-bottom: 20px;
   }
+  .host-description {
+    max-width: 100%;
+  }
 }
 
 
@@ -319,7 +327,7 @@ footer p {
 
   .idea-img{
     height: 400px;
-    max-width: 100%;
+
   }
 
   .about-image{

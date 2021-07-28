@@ -31,7 +31,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -96,7 +96,6 @@ form {
   flex-direction: column;
   border: 2px solid #ff385c;
   padding: 10px;
-  vertical-align: middle;
 }
 
 form label {
@@ -119,7 +118,10 @@ form button {
   width: 100%;
 }
 
-
+.form-separator{
+  display: flex;
+  justify-content: space-between;
+}
 /* -------  Footer ------- */
 
 footer {
@@ -137,6 +139,8 @@ footer p {
   form{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
   }
 
   header {
@@ -169,6 +173,7 @@ footer p {
     width: 100%;
   }
 
+  
   form input {
     width: 110px;
   }
